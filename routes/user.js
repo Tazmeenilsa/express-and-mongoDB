@@ -2,6 +2,7 @@ const express=require("express")
 const router= express.Router()
 const Users=require('../schema/user')
 
+
 router.get("/add",(req,res,next)=>{
     res.send('<form action="/user/addUser" method="POST"><input type="text"/><button>add</button></form>')
 })
@@ -39,6 +40,5 @@ router.post("/addUser",(req,res,next)=>{
   })
   console.log(newUser)
 })
-
 
 module.exports=router
