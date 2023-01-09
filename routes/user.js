@@ -40,4 +40,5 @@ router.post("/addUser",(req,res,next)=>{
   console.log(newUser)
 })
 
+
 module.exports=router
